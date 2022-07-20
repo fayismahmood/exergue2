@@ -54,7 +54,7 @@ export default function Home() {
                   targets: e,
                   rotate: [0, 40, 0],
                   scale: [1, 2, 1],
-                  duration: 180060,
+                  duration: 38000,
                   loop: true,
                   elasticity: 600,
                   easing: 'easeOutElastic',
@@ -100,15 +100,13 @@ export default function Home() {
               if (e) {
                 anime({
                   targets: e,
-                  rotate: [0, 40, 0],
+                  rotate: [0, 20, 0],
                   scale: [1, 2, 1],
-                  duration: 1800600,
+                  duration: 38000,
                   loop: true,
                   elasticity: 600,
                   easing: 'easeOutElastic',
-                  delay: function (el, index) {
-                    return index * 80;
-                  },
+                  
                 });
               }
             }}
@@ -336,7 +334,8 @@ export default function Home() {
               className="button">
               <button
                 onClick={() => {
-                  setRegForm(true)
+                 
+                  window.open("https://forms.gle/QXsV3ccB39zNLwt1A")
                 }}
 
               >Book My slot</button>
@@ -508,7 +507,7 @@ export default function Home() {
               <div className="eTlk">
 
                 <div className="by">
-                  <img src="https://utharakalam.com/wp-content/uploads/2018/03/Shameer-KS-e1550488514933.jpg" alt="" />
+                  <img src="/shUst.jpeg" alt="" />
                   <div className="Name">
                   Shameer Ali Hudawi Pallath                  </div>
                   <div className="disc">
@@ -527,7 +526,7 @@ export default function Home() {
                   </div>
 
                   <div className="mod">
-                    <b>Moderator:</b> Twaha Murshid Hudawi
+                    <b>Moderator:</b> Sadath Ali Chelari
                   </div>
                 </div>
 
@@ -539,6 +538,11 @@ export default function Home() {
       </div>
       {RegForm && <Register setRegForm={setRegForm} />}
       <style jsx>{`
+      @media only screen and (max-width: 600px) {
+  .gr {
+    opacity: .2;
+  }
+}
         .fullPrg{
           margin: 20px 30px;
           margin-top: 80px;
@@ -596,7 +600,7 @@ export default function Home() {
           margin-bottom: 20px;
         }
         .eTlk .subj b{
-          font-size: 30px ;
+          font-size: 25px ;
           line-height: 1;
           background: #6B1F5F;
           color: white;
@@ -660,7 +664,7 @@ export default function Home() {
         .prg .proS .e .prg{
           font-style: normal;
           font-weight: 900;
-          font-size: 18.0425px;
+          font-size: 25.0425px;
           line-height: 28px;
 
           color: #E05171;
@@ -699,6 +703,11 @@ export default function Home() {
           top:0;
           z-index: 50;
           width: 100%;
+        }
+        .Hero .cont .Head{
+          display: grid;
+          place-content: center;
+          place-items: center;
         }
         .Hero .cont{
           width:100%;

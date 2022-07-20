@@ -6,10 +6,32 @@ import { useState } from 'react';
 import styles from '../styles/Home.module.css'
 
 
+
 export default function Home() {
   const [RegForm, setRegForm] = useState(false);
   return (
     <div>
+      <Head>
+        <title>EXERGUE Philosophy Colloquium 2022
+        </title>
+        <meta name="title" content="EXERGUE Philosophy Colloquium 2022
+"/>
+        <meta name="description" content="Exergue is a philosophy colloquium initiated by Department of Aqeeda and philosophy, Darul Huda Islamic University. Topics surrounding post-modernism, post-structuralism, Islamic contemporary philosophy, post modern idea in Islamic philosophy are discussed throughout the colloquium. Aspirants are requested to fill the below given form." />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="EXERGUE Philosophy Colloquium 2022
+"/>
+        <meta property="og:description" content="Exergue is a philosophy colloquium initiated by Department of Aqeeda and philosophy, Darul Huda Islamic University. Topics surrounding post-modernism, post-structuralism, Islamic contemporary philosophy, post modern idea in Islamic philosophy are discussed throughout the colloquium. Aspirants are requested to fill the below given form." />
+        <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="EXERGUE Philosophy Colloquium 2022
+"/>
+        <meta property="twitter:description" content="Exergue is a philosophy colloquium initiated by Department of Aqeeda and philosophy, Darul Huda Islamic University. Topics surrounding post-modernism, post-structuralism, Islamic contemporary philosophy, post modern idea in Islamic philosophy are discussed throughout the colloquium. Aspirants are requested to fill the below given form." />
+        <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
+      </Head>
       <div className="Hero">
         <div className="bg">
           <svg width="1201" height="982" viewBox="0 0 1201 982" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,7 +128,7 @@ export default function Home() {
                   loop: true,
                   elasticity: 600,
                   easing: 'easeOutElastic',
-                  
+
                 });
               }
             }}
@@ -334,7 +356,7 @@ export default function Home() {
               className="button">
               <button
                 onClick={() => {
-                 
+
                   window.open("https://forms.gle/QXsV3ccB39zNLwt1A")
                 }}
 
@@ -509,9 +531,9 @@ export default function Home() {
                 <div className="by">
                   <img src="/shUst.jpeg" alt="" />
                   <div className="Name">
-                  Shameer Ali Hudawi Pallath                  </div>
+                    Shameer Ali Hudawi Pallath                  </div>
                   <div className="disc">
-                  PG Lecturer, Darul Huda Islamic University
+                    PG Lecturer, Darul Huda Islamic University
                   </div>
                 </div>
 
@@ -520,7 +542,7 @@ export default function Home() {
                     <b>Post-modern ideas in Islamic academics
                     </b>
                     <sub>
-                    Islamic response to post-modernism and post-structuralism
+                      Islamic response to post-modernism and post-structuralism
 
                     </sub>
                   </div>
@@ -886,7 +908,7 @@ function Register({ setRegForm }) {
           }}>
             Register
           </button>
-          <button onClick={()=>{setRegForm(false)}} style={{background:"red"}}>Close</button>
+          <button onClick={() => { setRegForm(false) }} style={{ background: "red" }}>Close</button>
         </div>
       </div>
       <style jsx>{`

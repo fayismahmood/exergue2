@@ -559,7 +559,7 @@ export default function Home() {
           display: grid;
           place-content:center;
           padding: 20px 30px;
-          max-width: 400px;
+          max-width: min(400px,calc(100vw - 100px));
 
           margin: 50px;
           flex-wrap: wrap;
@@ -664,6 +664,7 @@ export default function Home() {
           line-height: 28px;
 
           color: #E05171;
+          background: none;
         }
         .prg .proS .e .by{
           font-weight: 400;

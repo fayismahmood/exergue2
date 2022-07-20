@@ -660,7 +660,7 @@ export default function Home() {
         .prg .proS .e .prg{
           font-style: normal;
           font-weight: 900;
-          font-size: 22.0425px;
+          font-size: 18.0425px;
           line-height: 28px;
 
           color: #E05171;
